@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Column Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header class="header">
+            <input type="checkbox" id="navBtn">
+
+            <!-- ヘッダーロゴ -->
+            <div class="logo">
+                <h1>ポケカ紹介</h1>
+            </div>
+
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                  <nav class="nav_content"> 
+					<ul>
+                        <li class="nav_item"><a href="#home">ポケモンカードとは</a></li>
+                        <li class="nav_item"><a href="#about">カード紹介</a></li>
+                        <li class="nav_item"><a href="#works">？？？？</a></li>
+                        <li class="nav_item"><a href="#contact">？？？？</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">ポケモンカードとは</a></li>
+                <li><a href="#about">カード紹介</a></li>
+                <li><a href="#works">？？？？</a></li>
+                <li><a href="#contact">？？？？</a></li>
+            </ul>
+        </nav>
+        <picture>
+            <source media="(min-width: 640px)" srcset="images/pokeka_temoto.jpg">
+            <img src="pokeka_temoto.jpg" alt>
+        </picture>
+
+        <main>
+            <section id="home" class="sec01">
+                <h2>ポケモンカードとは</h2>
+                <!--<p>さらにコンテンツが入ります。</p>-->
+                <br><span>ポケットモンスターを</span>TCG(トレーディングカードゲーム)化<span>したものです。</span></br>
+                <br><span>グッズやサポートを駆使して</span><span>先に相手のポケモンを</span><span>多く倒した方の勝ちです！</span></br>
+                <br></br>
+            </section>
+
+            <section id="about">
+                <h2>カード紹介</h2>
+                <p class="sq-icon">ポケモン</p>
+                <p class="ci-icon">たねポケモン</p>
+                <br><span>左上に「たね」と</span><span>表記しているカードです。</span></br>
+                <br><span>出しやすい代わりに</span><span>体力が低く、</span><span>技のダメージも弱いです。</span></br>
+                <br><span>名前の右上にある</span><span>数字が体力で、</span><span>技の右にある数字が</span><span>技のダメージです。</span></br>
+                <br><span>技を使うと</span><span>相手のバトル場のポケモンに</span><span>「ダメカン」を乗せます。</span></br>
+                <br></br>
+                <div class="card"><img src="images/nyaoha_pokeka.png" alt></div>
+            </section>
+
+            <section id="works" class="sec03">
+                <h2>WORKS</h2>
+                <p>さらにコンテンツが入ります。</p>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <div class="container">
+                </div>
+            </section>
+
+            <section id="contact" class="sec04">
+                <h2>CONTACT</h2>
+                <p>さらにコンテンツが入ります。</p>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+        </main>
+
+        <footer>
+            <p>© My Site </p>
+        </footer>
+        <a href="#" class="pagetop">▲</a>
+    </div>
+</body>
+
+</html>
